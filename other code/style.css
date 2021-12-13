@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.text{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+       width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+.navbar-links li a {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#ubuntu-font{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+}
