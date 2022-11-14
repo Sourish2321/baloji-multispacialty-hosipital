@@ -1,3 +1,10 @@
+body {
+    background-color: #010203;
+    color: white;
+}
+
+
+
 *{
     box-sizing: border-box;
 }
@@ -17,6 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 .logo{
     width: 1.5rem;
@@ -27,6 +35,7 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    color: white;
 }
 
 .navbar-links li{
@@ -95,6 +104,7 @@ body{
 
 .navbar-links li a {
     font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
 
 #ubuntu-font{
@@ -105,4 +115,18 @@ iframe{
     display: block;
     margin: 0 auto;
     background-color: #777;
+}
+
+#logo    {
+    width: 5rem;
+}
+
+p h1 h2 h3 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: white;
+    text-align: center;
 }
